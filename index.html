@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="premier.css">
+</head>
+<body>
+  <a name="haut"></a>
+  <div class="menu">
+        <nav class="navbar navbar-expand-md navbar-light bg text-white">
+          <div class="container-fluid text-white">
+            <h1 class="navbar-brand text-warning fs-1" >myfood</h1>
+            <button class="navbar-toggler mt-2 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-3 mb-2 mb-lg-0 cont">
+                <li class="nav-item">
+                  <a class="nav-link mx-3 text-white fs-4" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white fs-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Découverte
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-white fs-5 text-center" href="mets.html">Mets</a></li>
+                    <li><a class="dropdown-item text-white fs-5 text-center" href="boisson.html">Boisson</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mx-3 fs-4" href="apropos.html">A propos</a>
+                </li>
+              </ul>       
+            </div>
+          </div>
+        </nav>
+      </div>
+    <div class="texte">
+      <p class="fs-3 text-center">Bienvenue à <b class="text-warning">myfood</b> une entreprise disposant de plusieurs restaurants,vous offre divers plats et boissons qu'elle vous livrents même sans frais de livraison. Vous pouvez lancer votre commande quelqu'en soit votre position dans la région.Nous vous offrons des met spéciaux et délicieux.<a href="apropos.html" class="voir">Voir plus</a></p>
+    </div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="commande.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="restaurant.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="header.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="restaurant1.jpg" alt="Third slide">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"></span>
+      </button>
+    </div>
+    <section>
+        <h2 class="fs-3">Nos restaurants</h2>
+    <div class="container-fluid">
+      <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="met">
+        <img src="logo1.jpg" class="img-responsive pu">
+        <h4><p><b>Bon Appetit</b><br> situé à cotonou<br><a href="cotonou.jpg">lieu</a></p></h4>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="met">
+        <img src="logo2.jpg" class="img-responsive pu">
+        <h4><p><b>Pizzeria salsa</b><br> situé à calavi<br><a href="calavi.jpg">lieu</a></p></h4>
+      </div>
+      </div>  
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="met">
+          <img src="logo3.jpg" class="img-responsive pu">
+          <h4><p><b>La Manne</b><br>situé à ouidah <br><a href="ouidah.jpg">lieu</a></p></h4>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="met">
+          <img src="logo4.png" class="img-responsive pu">
+          <h4><p><b>Bar infinity</b><br> situé à porto-novo <br><a href="porto.jpg">lieu</a></p></h4>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary w-50 text-center m-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Passer votre commande</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Votre commande</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+           <div class="form-group p-3">
+            <input type="text" id="NOM" placeholder="Votre nom" class="form-control">
+            </div>
+           <div class="form-group p-3">
+                 <input type="text" id="Prenoms" placeholder="Votre prénoms" class="form-control">
+          </div>
+            <div class="form-group p-3">
+                  <Input type="tel" id="TELEPHONE" placeholder="Téléphone" class="form-control">
+            </div>
+            <div class="form-group p-3">
+              <select class="form-control">
+                <option value=""><h3>Choix de restaurant</h3></option>
+                <option value="">Cotonou(Bon Appetit)</option>
+                <option value="">porto-novo(Bar infinity)</option>
+                <option value="">Ouidah(La Manne)</option>
+                <option value="">Calavi(Pizzeria salsa)</option>
+            </select> 
+            </div>
+            <div class="form-group p-3">
+              <textarea class="form-control" placeholder="Addresse" id="message-text"></textarea>
+            </div>
+                <div class="form-group p-3">
+                  <textarea class="form-control" placeholder="Entrer votre commande" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-primary">Valider</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="local"></div>
+    <footer class="bg-secondary text-white">
+      <b class="text-warning text-left fs-2 ml-2 bg-dark">myfood</b>
+    <div class="container-fluid">
+     <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center text-white">
+        <a href="#haut" class="text-info text-center">Aller en haut</a><br><br>
+        <a class=" text-white text-center" href="mets.html">Mets</a><br><br>
+        <a class="text-white text-center" href="boisson.html">Boisson</a><br><br>
+        <a href="apropos.html" class="text-white">A propos</a>
+      </div>
+       <div class="col-lg-4 col-md-4 col-sm-12 text-center ">
+          <div class="m-auto mb-3 mt-3 reseau">
+          <img src="wath.jpg" class="img-responsive icon-bas rounded">
+          <a href="https://wa.me/22957775308text=Bienvenue%20dans%20myfood" class="text-white">WhatsApp</a>
+          </div>
+          <div class=" mb-3 m-auto reseau">
+          <img src="face.jpg" class="img-responsive icon-bas rounded">
+          <a href="https://www.facebook.com/profile.php?id=100079488641583" class="text-white">Facebook</a>
+          </div>
+          <div class="m-auto mb-3 reseau">
+          <img src="insta.jpg" class="img-responsive icon-bas rounded">
+          <a href="https://instagram.com/marsoukbiaou?ighid=MzNINGNkZWQ4Mg==" class="text-white">Instagram</a>
+          </div>
+          <div class="m-auto mb-3 reseau">
+            <img src="cont.jpg" class="img-responsive icon-bas rounded">
+            <a href="" class="text-white">57775308</a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+          <div class=" text-white">
+            biaoumarsouk@gmail.com
+          </div><br>  
+          <div>
+            <input type="emeil" placeholder="your email" class="text-center m-auto"><br><br>
+            <button class="btn btn-warning text-center w-50 m-auto">Abonné</button>
+          </div>       
+        </div>
+         <div>
+
+         </div>
+      
+      <div class="text-center p-3 bg-dark">
+      codeofmarsouk © 2023.
+      </div>
+      </footer>
+      <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          window.onscroll = function(ev) {
+            document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+          };
+        });
+        </script>
+      <script src="bootstrap.bundle.js"></script>
+</body>
+</html>

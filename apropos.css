@@ -1,0 +1,96 @@
+.navbar-toggler:focus{ 
+    box-shadow: none;
+}
+.navbar-collapse{
+    text-align:center;
+    display: inline;
+    font-size: 25px;
+    margin-top:0;
+}
+.cont{
+    margin-left: auto;
+}
+.menu{
+    position:sticky;
+    top:0;
+    z-index:2;
+}
+.bg{
+ background-color:rgb(230, 158, 95);
+ padding: 0;
+}
+.promotion{
+    background-color:rgb(230, 158, 95);
+    padding: 0;   
+}
+
+.navbar-brand{
+    background-color: black;
+}
+.dropdown-menu{
+    background-color:rgb(230, 158, 95);;
+}
+.bien{
+    background-image: url(head.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom:0;
+}
+.active{
+    margin: auto;
+}
+.carousel-item img{
+    height:auto;
+}
+#carouselExampleControls{
+    margin: auto;
+    width: 60%;
+}
+.icon-bas{
+    width: 30px;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+.reseau{
+    margin:auto;
+    margin-left: 28%;
+    }
+.rem{
+    font-weight: bold;
+    font-size: 20px;
+}
+    a#cRetour{
+        border-radius:3px;
+        padding:10px;
+        font-size:15px;
+        text-align:center;
+        color:#000;
+        background:rgb(168, 221, 221);
+        position:fixed;
+        right:20px;
+        opacity:1;
+        z-index:99999;
+        transition:all ease-in 0.2s;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        text-decoration: none;
+      }
+      a#cRetour:before{ content: "\25b2"; }
+      a#cRetour:hover{
+        background: #005566;
+        transition:all ease-in 0.2s;
+      }
+      a#cRetour.cInvisible{
+        bottom:-35px;
+        opacity:0;
+        transition:all ease-in 0.5s;
+      }
+      
+      a#cRetour.cVisible{
+        bottom:20px;
+        opacity:1;
+      }
